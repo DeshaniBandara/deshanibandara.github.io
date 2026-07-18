@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deshani Bandara | Engineering & Education Portfolio</title>
+    <!-- Tailwind CSS for Modern Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Injection for Special Animations -->
+    <style>
+        @keyframes slow-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes float-slow {
+            0%, 100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-15px) scale(1.05); }
+        }
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.1); }
+        }
+        .animate-spin-slow {
+            animation: slow-spin 25s linear infinite;
+        }
+        .animate-float {
+            animation: float-slow 6s ease-in-out infinite;
+        }
+        .animate-pulse-soft {
+            animation: pulse-soft 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
+
+    <!-- Background Decorative Lighting Effects -->
+    <div class="fixed -top-40 -left-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none animate-pulse-soft"></div>
+    <div class="fixed top-1/2 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none animate-pulse-soft" style="animation-delay: 2s;"></div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800/60">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-extrabold bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent hover:scale-105 transition transform">
+             ♛  print("Deshani Bandara")
+            </a>
+            <nav class="hidden md:flex space-x-8 font-medium text-sm text-slate-400">
+                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                <a href="#education" class="hover:text-blue-400 transition-colors">Education</a>
+                <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#socials" class="hover:text-blue-400 transition-colors">Channels</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero / Main Section -->
+    <section id="about" class="relative max-w-5xl mx-auto px-6 pt-24 pb-24 flex flex-col items-center text-center min-h-[85vh] justify-center">
+        <!-- Interactive Animated Orbit Ring behind the Logo -->
+        <div class="absolute w-44 h-44 border border-dashed border-indigo-500/30 rounded-full animate-spin-slow pointer-events-none"></div>
+        <div class="absolute w-52 h-52 border border-slate-700/40 rounded-full pointer-events-none"></div>
+        
+       <!-- Animated Identity Tag -->
+<div class="relative w-28 h-28 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center text-white text-4xl font-black shadow-xl shadow-indigo-900/30 mb-8 animate-float transform hover:rotate-12 transition duration-300 cursor-pointer">
+    
+    
+    <img src="profile.jpg" alt="Profile Picture" class="w-full h-full object-cover rounded-2xl">
+    
+    <!-- Online Indicator (Active Status Dot) -->
+    <div class="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-slate-900 animate-ping"></div>
+    <div class="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-slate-900"></div>
+</div>
+
+        <span class="px-4 py-1 bg-slate-800 text-blue-400 text-xs font-semibold rounded-full border border-slate-700 tracking-wide uppercase mb-4 shadow-inner">
+            BICT Undergraduate & SQA Enthusiast
+        </span>
+        
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
+            Building Systems, <br class="hidden md:block">
+            Ensuring <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Software Quality</span>
+        </h1>
+        
+        <p class="text-base md:text-lg text-slate-400 max-w-2xl mb-10 leading-relaxed">
+            Passionate Full-Stack Developer focusing on the React ecosystem and Back-End architecture. Experienced SQA evaluator coupled with specialized professional expertise in Phonics, Linguistics, and ICT delivery workflows.
+        </p>
+
+        <!-- CTA Buttons containing the dynamic CV Download Link -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-auto">
+            <!-- Dynamic CV Download Link -->
+            <a href="cv.pdf" download="Deshani_Bandara_CV.pdf" class="group px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-xl hover:from-blue-500 hover:to-indigo-500 transition-all shadow-lg shadow-indigo-900/40 flex items-center gap-3 w-full sm:w-auto justify-center hover:-translate-y-1 transform duration-200">
+                <i class="fas fa-file-download text-lg group-hover:animate-bounce"></i> Download CV (.pdf)
+            </a>
+            <div class="flex gap-3 w-full sm:w-auto justify-center">
+                <a href="https://www.linkedin.com/in/deshani-bandara-a0b733367/" target="_blank" class="p-4 bg-slate-800 border border-slate-700 hover:border-slate-600 text-slate-300 hover:text-white rounded-xl transition shadow-sm flex items-center justify-center hover:-translate-y-1 transform duration-200" title="LinkedIn">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://github.com/DeshaniBandara" target="_blank" class="p-4 bg-slate-800 border border-slate-700 hover:border-slate-600 text-slate-300 hover:text-white rounded-xl transition shadow-sm flex items-center justify-center hover:-translate-y-1 transform duration-200" title="GitHub">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section id="education" class="max-w-4xl mx-auto px-6 py-20 border-t border-slate-800/80">
+        <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3 justify-center md:justify-start">
+            <i class="fas fa-graduation-cap text-indigo-400"></i> Academic Background
+        </h2>
+        <div class="space-y-12 relative before:absolute before:inset-0 before:left-4 before:w-0.5 before:bg-slate-800">
+            <!-- Uni 1 -->
+            <div class="relative pl-10 group transition-transform duration-300 hover:translate-x-2">
+                <div class="absolute left-2 top-1.5 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-slate-900 group-hover:bg-purple-500 transition"></div>
+                <h3 class="font-bold text-xl text-white group-hover:text-blue-400 transition-colors">University of Vavuniya</h3>
+                <p class="text-sm font-semibold text-indigo-400 mb-3">Bachelor of Information and Communication Technology Honours (BICT Hons)</p>
+                <p class="text-slate-400 text-sm max-w-2xl leading-relaxed">Specialized path focused on system architecture models, automated testing paradigms, frontend states (React.js), and clean backend services.</p>
+            </div>
+            <!-- Institution 2 -->
+            <div class="relative pl-10 group transition-transform duration-300 hover:translate-x-2">
+                <div class="absolute left-2 top-1.5 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-slate-900 group-hover:bg-purple-500 transition"></div>
+                <h3 class="font-bold text-xl text-white group-hover:text-blue-400 transition-colors">Sri Lanka Institute of Advanced Technological Education (SLIATE)</h3>
+                <p class="text-sm font-semibold text-indigo-400 mb-3">Higher National Diploma in English</p>
+                <p class="text-slate-400 text-sm max-w-2xl leading-relaxed">Advanced academic concentration in professional communication methods, Phonetics structure, and functional English Linguistics.</p>
+            </div>
+            <!-- School -->
+            <div class="relative pl-10 group transition-transform duration-300 hover:translate-x-2">
+                <div class="absolute left-2 top-1.5 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-slate-900 group-hover:bg-purple-500 transition"></div>
+                <h3 class="font-bold text-xl text-white group-hover:text-blue-400 transition-colors">A. Rathnayake Central College</h3>
+                <p class="text-sm font-semibold text-indigo-400 mb-2">Secondary Education Foundations</p>
+                <p class="text-slate-400 text-sm max-w-2xl leading-relaxed">Developed critical foundations in technical teamwork operations, leadership roles, and linguistic skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Grid / Skills Section -->
+    <section id="skills" class="bg-slate-950 border-y border-slate-800 py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-2 text-center">Core Technical Capabilities</h2>
+            <p class="text-center text-slate-500 mb-12 text-sm">Hover over blocks to trigger dynamic interactive glow transitions</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-slate-900/50 rounded-2xl text-center border border-slate-800 hover:border-indigo-500/40 hover:bg-slate-900 transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-blue-950 text-blue-400 rounded-xl flex items-center justify-center text-3xl mb-4 mx-auto group-hover:rotate-12 transition transform">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <p class="font-bold text-white mb-1">React.js Ecosystem</p>
+                    <p class="text-slate-500 text-xs">SPAs, Hooks, Context APIs</p>
+                </div>
+                <div class="p-6 bg-slate-900/50 rounded-2xl text-center border border-slate-800 hover:border-purple-500/40 hover:bg-slate-900 transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-purple-950 text-purple-400 rounded-xl flex items-center justify-center text-3xl mb-4 mx-auto group-hover:rotate-12 transition transform">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <p class="font-bold text-white mb-1">Back-End Logic</p>
+                    <p class="text-slate-500 text-xs">Node architectures & REST APIs</p>
+                </div>
+                <div class="p-6 bg-slate-900/50 rounded-2xl text-center border border-slate-800 hover:border-emerald-500/40 hover:bg-slate-900 transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-emerald-950 text-emerald-400 rounded-xl flex items-center justify-center text-3xl mb-4 mx-auto group-hover:rotate-12 transition transform">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <p class="font-bold text-white mb-1">SQA Engineering</p>
+                    <p class="text-slate-500 text-xs">Quality assurance & Test scripts</p>
+                </div>
+                <div class="p-6 bg-slate-900/50 rounded-2xl text-center border border-slate-800 hover:border-amber-500/40 hover:bg-slate-900 transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-amber-950 text-amber-400 rounded-xl flex items-center justify-center text-3xl mb-4 mx-auto group-hover:rotate-12 transition transform">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <p class="font-bold text-white mb-1">Phonics & Linguistics</p>
+                    <p class="text-slate-500 text-xs">ICT and Language Tutoring</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Socials & Resource Broadcast Channels Section -->
+    <section id="socials" class="py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-white mb-2">Ecosystems & Learning Hubs</h2>
+            <p class="text-center text-slate-500 mb-12 text-sm">Explore live channels and open access resources</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- YouTube -->
+                <div class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800/80 hover:border-red-500/40 hover:bg-slate-900 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-red-950/60 text-red-500 rounded-xl flex items-center justify-center text-xl mb-4">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white mb-2">English For Kids</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Dynamic video production curated to instill early phonetic values and structural language systems for young students.</p>
+                    </div>
+                    <a href="https://www.youtube.com/@EnglishForKidsLk" target="_blank" class="text-sm font-semibold text-red-400 hover:text-red-300 flex items-center gap-1 group w-fit">
+                        Open YouTube Channel <i class="fas fa-chevron-right text-xs transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <!-- Telegram -->
+                <div class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800/80 hover:border-sky-500/40 hover:bg-slate-900 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-sky-950/60 text-sky-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                            <i class="fab fa-telegram-plane"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white mb-2">Telegram Resource Hub</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Direct broadcast community set up to deliver customized educational handouts, work materials, and direct instructions.</p>
+                    </div>
+                    <a href="https://t.me/Englishforkids_Lk" target="_blank" class="text-sm font-semibold text-sky-400 hover:text-sky-300 flex items-center gap-1 group w-fit">
+                        Access Resources <i class="fas fa-chevron-right text-xs transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <!-- Facebook -->
+                <div class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800/80 hover:border-blue-500/40 hover:bg-slate-900 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-950/60 text-blue-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white mb-2">Facebook Platform</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Social content deployment, digital flashcards, program announcements, and interactive community update posts.</p>
+                    </div>
+                    <a href="https://web.facebook.com/EnglishforkidszLk?_rdc=1&_rdr#" target="_blank" class="text-sm font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1 group w-fit">
+                        Follow Platform <i class="fas fa-chevron-right text-xs transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unified Contact Matrix Section -->
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-20">
+        <div class="relative bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 md:p-12 border border-slate-800 text-center shadow-2xl overflow-hidden">
+            <!-- Decorative circle glow inside card -->
+            <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-indigo-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+            <h2 class="text-3xl font-extrabold mb-4 text-white">Let's Connect</h2>
+            <p class="text-slate-400 max-w-xl mx-auto mb-10 text-sm md:text-base">
+                Available for software developer projects, SQA verification assignments, or tutoring inquiries.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <a href="mailto:deshanibandara2001@gmail.com" class="flex items-center gap-3 bg-slate-800/80 hover:bg-slate-800 hover:border-slate-600 text-slate-200 px-6 py-4 rounded-xl border border-slate-700 transition w-full md:w-auto justify-center group">
+                    <i class="fas fa-envelope text-indigo-400 group-hover:scale-110 transition"></i> deshanibandara2001@gmail.com
+                </a>
+                <a href="tel:+94741534794" class="flex items-center gap-3 bg-slate-800/80 hover:bg-slate-800 hover:border-slate-600 text-slate-200 px-6 py-4 rounded-xl border border-slate-700 transition w-full md:w-auto justify-center group">
+                    <i class="fas fa-phone-alt text-emerald-400 group-hover:scale-110 transition"></i> +94 74 153 4794
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-8 text-center text-xs text-slate-600">
+        <p>&copy; 2026 Deshani Bandara. Engineering & Technical Education Portfolio.</p>
+    </footer>
+
+</body>
+</html>
